@@ -1,3 +1,37 @@
+Date: 18/09/2026
+Device changelogs:
+- Updated blobs & fingerprints to OS2.0.210.0.VMWMIXM (30/08)
+- Added TopexTool in Parts (30/08)
+- Fixed grip sensor & add wcnssr on boot (27/08)
+- Disabled VINTF kernel version enforcement (24/08)
+- Added GNSS AIDL v1 to framework matrix (21/08)
+- Imported activity open/close animations (16/08)
+- Enabled BBR congestion control with FQ qdisc (16/08)
+- Removed duplicate frequency step (15/08)
+- Imported task profiles (23/07)
+- ZRAM switched to ZSTD + fixed swappiness override (21/07)
+- Fixed powerhint GPU defaults & big cluster interaction min freq (25/07)
+- Wired up post_boot & deduplicated memory tuning (22/07)
+- Set product shipping API level to 33 (20/07)
+- And Many More...
+
+Kernel changelogs:
+- Upstream 5.10.269 Kernel (02/09)
+- Merged LineageOS sm8450 into 17 (11/09)
+- Disabled PANIC_ON_OOPS (18/09)
+- NT36672C touch: gesture read sync & suspend decouple fixes (03/09)
+- Added xiaomi_touch up_threshold/tolerance sysfs bridge (03/09)
+- Fixed ufs_cpufreq_status for merged config (06/09)
+- Added IPC support to defconfig (30/08)
+- Fixed minidump WALT task accessor (05/09)
+- Fixed camera-kernel memleak issues (02/09)
+- Updated aw87xxx audio-kernel module (16/08)
+- And More...
+
+
+---
+
+
 Date: 19/07/2026
 Device changelogs:
 - qca_cld3 as Wifi Driver
