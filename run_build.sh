@@ -509,10 +509,13 @@ else
   edit_msg "$TARGET_ID" "📦 Finalizing Build..."
 
   ZIP=$(find out/target/product/$DEVICE_CODE \
-    -name "*.zip" \
+    -maxdepth 1 -name "*.zip" -size +500M \
     -newer "$BUILD_MARKER" \
     | grep -vE "ota|target_files|symbols" \
-    | head -n1)
+    | xargs -r stat -c '%Y %n' 2>/dev/null \
+    | sort -rn \
+    | head -n1 \
+    | cut -d' ' -f2-)
 
   rm -f "$BUILD_MARKER"
 
